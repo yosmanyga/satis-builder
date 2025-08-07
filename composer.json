@@ -1,0 +1,30 @@
+{
+  "name": "yosmanyga/satis-builder",
+  "version": "0.1.0",
+  "require": {
+    "php": ">=8.4",
+    "mustache/mustache": "^v3.0.0",
+    "symfony/yaml": "^7.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Yosmanyga\\": [
+        "src/"
+      ]
+    }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "http://satis"
+    }
+  ],
+  "config": {
+    "allow-plugins": {
+      "php-http/discovery": true
+    },
+    "secure-http": false
+  },
+  "prefer-stable": true,
+  "minimum-stability": "dev"
+}

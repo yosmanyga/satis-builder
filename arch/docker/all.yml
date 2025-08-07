@@ -1,0 +1,22 @@
+services:
+  php:
+    image: satis_builder_php
+    build:
+      context: './php'
+      dockerfile: Dockerfile
+    container_name: satis_builder_php
+    volumes:
+      - ./php/php.ini:/usr/local/etc/php/php.ini
+      - ../../:/var/www/
+    networks:
+      - development
+    environment:
+      PHP_IDE_CONFIG: "serverName=docker"
+      PATH: $PATH:/var/www/vendor/bin
+    extra_hosts:
+      - host.docker.internal:host-gateway
+    working_dir: /var/www
+
+networks:
+  development:
+    external: true

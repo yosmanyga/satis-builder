@@ -1,0 +1,11 @@
+# Path where the libraries are located
+path_pre: /projects/%s/php-libs/%s
+#path_pre: https://github.com/%s/%s
+
+# Optional: Path where each library contains its code
+path_post: code
+
+packages:
+  - yosmanyga/lib-1
+  - yosmanyga/lib-2
+
