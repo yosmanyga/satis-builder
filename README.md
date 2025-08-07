@@ -36,14 +36,14 @@ Output file:
   "homepage": "http://localhost:8080",
   "repositories": [
     {
-        "name": "yosmanyga/lib-1",
-        "type": "vcs",
-        "url": "/projects/yosmanyga/php-libs/lib-1/"
+      "name": "yosmanyga/lib-1",
+      "type": "vcs",
+      "url": "/projects/yosmanyga/php-libs/lib-1/code"
     },
     {
-        "name": "yosmanyga/lib-2",
-        "type": "vcs",
-        "url": "/projects/yosmanyga/php-libs/lib-2/"
+      "name": "yosmanyga/lib-2",
+      "type": "vcs",
+      "url": "/projects/yosmanyga/php-libs/lib-2/code"
     }
   ],
   "require-all": true
