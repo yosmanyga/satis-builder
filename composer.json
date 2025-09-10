@@ -13,12 +13,6 @@
       ]
     }
   },
-  "repositories": [
-    {
-      "type": "composer",
-      "url": "http://satis"
-    }
-  ],
   "config": {
     "allow-plugins": {
       "php-http/discovery": true
