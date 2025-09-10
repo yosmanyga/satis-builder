@@ -8,9 +8,7 @@ make start
 
 # Execute
 
-make enter
-
-php src/generate.php var/sample/input var/sample/output
+docker exec -it satis_builder_php php src/generate.php var/sample/input var/sample/output
 
 Input file sample:
 

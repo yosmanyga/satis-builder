@@ -1,5 +1,5 @@
-# php:8.4-fpm-bookworm, Aug 4, 2025 at 10:06 pm
-FROM php@sha256:57a7b038fd845806447557c95503fd3f08d45cb8e549f7e3dcc8210b08642382
+# php:8.4.12-cli-trixie, Sep 9, 2025 at 6:59 pm
+FROM php@sha256:17075dd20abcbfaf53ce1bf02e15dcf51130280630194cf15822401608708284
 
 RUN apt-get update
 

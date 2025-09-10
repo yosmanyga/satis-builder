@@ -16,6 +16,7 @@ services:
     extra_hosts:
       - host.docker.internal:host-gateway
     working_dir: /var/www
+    command: tail -f /dev/null
 
 networks:
   development:
