@@ -4,7 +4,7 @@
 SCRIPT_DIR=$(dirname "$0")
 
 # Stop all services
-docker-compose \
+docker compose \
   -f "${SCRIPT_DIR}"/../docker/all.yml \
   -p satis_builder \
   stop

@@ -11,7 +11,7 @@ docker network inspect development >/dev/null 2>&1 || \
   docker network create development
 
 # Start all services
-docker-compose \
+docker compose \
   -f "${SCRIPT_DIR}"/../docker/all.yml \
   -p satis_builder \
   up -d \
