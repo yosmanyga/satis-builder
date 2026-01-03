@@ -41,14 +41,15 @@ foreach ($files as $key => $file) {
     foreach ($data['packages'] as $package) {
         [$namespace, $name] = explode('/', $package, 2);
 
+        $url = sprintf($data['path_pre'], $namespace, $name);
+        if (!empty($data['path_post'])) {
+            $url .= '/' . $data['path_post'];
+        }
+
         // Add to repos array
         $repos[] = [
             'name' => $package,
-            'url' => sprintf(
-                "%s/%s",
-                sprintf($data['path_pre'], $namespace, $name),
-                $data['path_post'] ?? '',
-            )
+            'url' => $url
         ];
     }
 }
