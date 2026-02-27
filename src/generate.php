@@ -56,8 +56,10 @@ foreach ($files as $key => $file) {
 
 echo sprintf("Found %s repos\n", count($repos));
 
-// Update last item
-$repos[count($repos) - 1]['last'] = true;
+if (count($repos) > 0) {
+    // Update last item
+    $repos[count($repos) - 1]['last'] = true;
+}
 
 $template = file_get_contents(__DIR__ . '/satis.json.mustache');
 
