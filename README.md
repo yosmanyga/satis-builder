@@ -8,7 +8,8 @@ make start
 
 # Execute
 
-docker exec -it satis_builder_php php src/generate.php var/sample/input var/sample/output
+docker exec -it satis_builder_php php src/generate.php var/sample/input
+var/sample/output
 
 Input file sample:
 
@@ -48,6 +49,7 @@ Output file:
 }
 ```
 
-You can modify the `path_pre` and `path_post` to fit your needs. The `%s` will be replaced by the package name parts.
+You can modify the `path_pre` and `path_post` to fit your needs. The `%s` will
+be replaced by the package name parts.
 
 You can also modify the satis template, located in `src/satis.json.mustache`.
